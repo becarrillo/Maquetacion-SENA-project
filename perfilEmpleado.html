@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/Gavasoft-Logo.svg" />
+    <title>Perfil del Empleado::GAVASOFT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&family=Maven+Pro:wght@500;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./styles/gestionSolicitudes.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex flex-col h-screen overflow-y-auto">
+        <header
+            class="flex flex-col space-y-2 justify-between px-8 py-3 w-screen fixed top-0 
+              bg-gradient-to-r from-indigo-600 to-fuchsia-700 md:flex-row md:space-y-0 
+              lg:flex-row lg:space-y-0 xl:flex-row xl:space-y-0 2xl:flex-row 
+              xl:space-y-0 md:px-20 lg:px-24 xl:px-24 2xl:px-24"
+        >
+            <div class="flex space-x-6 text-white">
+                <span class="material-symbols-outlined">menu</span>
+                <div>
+                    <span id="role">Administrador </span>
+                    <span class="material-icons text-sm">person</span>
+                </div>
+            </div>
+            <hr>
+            <div class="flex space-x-3.5 mx-auto md:flex-row md:mx-0 lg:flex-row 
+                  lg:mx-0 xl:flex-row xl:mx-0 2xl:flex-row 2xl:mx-0">
+                <div class="flex space-x-2">
+                    <button class="h-5 rounded-sm mt-0.5 hover:ring-1
+                    hover:ring-cyan-200" type="button">
+                        <img src="./assets/Gavasoft-Logo.svg" width="20" class="opacity-80 rounded-sm cursor-pointer" />
+                    </button>
+                    <button class="rounded-2xl bg-zinc-900 w-6 h-6 ml-auto hover:ring-1 hover:ring-cyan-200">
+                        <span class="small text-sm material-icons text-white">dark_mode</span>
+                    </button>
+                </div>
+
+                <form class="flex w-auto h-6">
+                    <fieldset class="flex w-auto h-6">
+                        <input class="w-36 pl-1.5 pb-0.5 text-sm md:w-44 lg:w-48 xl:w-56 2xl:w-56 focus:outline-none"
+                            placeholder="Buscar" />
+                        <button type="search" class="bg-white">
+                            <span class="material-icons z-10 text-gray-500 active:scale-110">
+                                search
+                            </span>
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+        </header>
+
+        <nav
+            class="flex mx-auto mt-12 mb-1 justify-center overflow-x-auto overflow-y-hidden pt-4 pb-24 w-3/4 
+              rounded-sm shadow-none text-sm md:pt-2 md:pb-20 md:shadow-slate-300 lg:pt-1.5 lg:pb-16 lg:shadow-md 
+              lg:shadow-slate-300 xl:pt-1.5 xl:pb-16 xl:shadow-md xl:shadow-slate-300 2xl:pt-2 2xl:pb-16
+              2xl:shadow-md 2xl:shadow-slate-300"
+        >
+            <ul class="flex bg-white flex-col ml-0 space-x-0.5 md:ml-0 lg:flex-row  
+                  lg:ml-24 xl:flex-row xl:ml-0 2xl:flex-row 2xl:ml-0 ">
+                <li class="flex self-center my-auto text-indigo-600 ml-0 px-1 h-8 
+                      lg:ml-48 xl:ml-48 2xl:ml-56 lg:h-12 xl:h-12 2xl:h-12 hover:text-indigo-500">
+                    <a class="flex justify-center my-auto w-24 px-1.5 w-16" href="./index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="flex text-indigo-600 px-1 h-8 lg:h-12 xl:h-12 2xl:h-12 hover:text-indigo-500">
+                    <a class="flex justify-center my-auto w-48 px-1.5" href="./menuAdministrador.html">
+                        / Menú Administrador
+                    </a>
+                </li>
+                <li class="flex text-indigo-600 px-1 h-8 lg:h-12 xl:h-12 2xl:h-12 hover:text-indigo-500">
+                    <a class="flex justify-center my-auto w-48 px-1.5" href="./.html">
+                        / Administrar empleados
+                    </a>
+                </li>
+                <li class="flex text-indigo-600 px-1 h-8 lg:h-12 xl:h-12 2xl:h-12 hover:text-indigo-500">
+                    <a class="flex justify-center my-auto w-48 px-1.5" href="./.html">
+                        / Consultar Empleado
+                    </a>
+                </li>
+                <li class="flex text-indigo-600 px-1 h-8 lg:h-12 xl:h-12 2xl:h-12 hover:text-indigo-500">
+                    <a class="flex justify-center my-auto w-48 px-1.5" href="./.html">
+                        / Realizar Consulta
+                    </a>
+                </li>
+                <li class="flex w-max h-8 lg:h-12 xl:h-12 2xl:h-12 px-1">
+                    <span class="flex justify-center my-auto rounded-sm 
+                          bg-zinc-500 text-zinc-300 px-1.5 py-0.5 
+                          w-48 lg:py-1.5 xl:py-1.5 2xl:py-1.5">
+                        / Perfil del empleado
+                    </span>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="flex flex-col mx-2 pt-9 gap-3 md:mx-24 lg:24 xl:mx-28 2xl:mx-28">
+            <div class="flex flex-col rounded-lg justify-center space-y-11 
+                  items-center mx-auto px-4 py-8 w-11/12 h-full">
+                <h2 class="text-lg font-bold md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl">
+                    INFORMACIÓN DE EMPLEADO
+                </h2>
+                <div class="p-3.5 grid grid-cols-1 grid-rows-6 gap-8 self-center 
+                      md:grid-cols-3 md:grid-rows-2 lg:grid-cols-3 
+                      lg:grid-rows-2 xl:grid-cols-3 xl:grid-rows-2 
+                      2xl:grid-cols-3 2xl:grid-rows-2">
+                    <div class="row-span-3">
+                        <img src="./assets/ejemplo-perfil.jpeg" />
+                    </div>
+                    <div>
+                        <h5 class="text-sm font-semibold">Tipo documento</h5>
+                        <span class="text-sm">cédula de ciudadanía</span>
+                    </div>
+                    <div>
+                        <h5 class="text-sm font-semibold">Número documento</h5>
+                        <span class="text-sm">2627036</span>
+                    </div>
+                    <div>
+                        <h5 class="text-sm font-semibold">Correo electrónico</h5>
+                        <span class="text-sm">manpe94@mailejemplo.com</span>
+                    </div>
+                    <div>
+                        <h5 class="text-sm font-semibold">Teléfono</h5>
+                        <span class="text-sm">(605)3365554444</span>
+                    </div>
+                    <div>
+                        <h5 class="text-sm font-semibold">Rol</h5>
+                        <span class="text-sm">asesor</span>
+                    </div>
+                    <div>
+                        <h5 class="text-sm font-semibold">Fecha ingreso</h5>
+                        <span class="text-sm">02-03-2020</span>
+                    </div>
+                </div>
+                <div class="flex flex- row space-x-3.5 self-center">
+                    <button
+                        class="flex px-3 py-1 rounded-sm bg-indigo-600 
+                          hover:bg-indigo-500 text-white"
+                    >
+                        <span class="material-symbols-outlined mr-0.5">
+                            edit
+                        </span>
+                        Modificar
+                    </button>
+                    <button
+                        class="flex px-3.5 py-1 rounded-sm bg-red-600 
+                          hover:bg-red-500 text-white"
+                    >
+                        <span class="material-symbols-outlined mr-0.5">
+                            delete
+                        </span>
+                        Eliminar
+                    </button>
+                </div>
+            </div>
+        </div>

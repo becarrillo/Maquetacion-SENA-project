@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/Gavasoft-Logo.svg" />
+    <title>Consultar Empleado::GAVASOFT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&family=Maven+Pro:wght@500;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./styles/gestionSolicitudes.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex flex-col overflow-x-hidden overflow-y-auto">
+        <header
+            class="flex flex-col space-y-2 justify-between px-8 py-3 w-screen fixed top-0 
+              bg-gradient-to-r from-indigo-600 to-fuchsia-700 md:flex-row md:space-y-0 
+              lg:flex-row lg:space-y-0 xl:flex-row xl:space-y-0 2xl:flex-row 
+              xl:space-y-0 md:px-20 lg:px-24 xl:px-24 2xl:px-24"
+        >
+            <div class="flex space-x-6 text-white">
+                <span class="material-symbols-outlined">menu</span>
+                <div>
+                    <span id="role">Administrador </span>
+                    <span class="material-icons text-sm">person</span>
+                </div>
+            </div>
+            <hr>
+            <div class="flex space-x-3.5 mx-auto md:flex-row md:mx-0 lg:flex-row 
+                  lg:mx-0 xl:flex-row xl:mx-0 2xl:flex-row 2xl:mx-0">
+                <div class="flex space-x-2">
+                    <button class="h-5 rounded-sm mt-0.5 hover:ring-1
+                    hover:ring-cyan-200" type="button">
+                        <img src="./assets/Gavasoft-Logo.svg" width="20" class="opacity-80 rounded-sm cursor-pointer" />
+                    </button>
+                    <button class="rounded-2xl bg-zinc-900 w-6 h-6 ml-auto hover:ring-1 hover:ring-cyan-200">
+                        <span class="small text-sm material-icons text-white">dark_mode</span>
+                    </button>
+                </div>
+
+                <form class="flex w-auto h-6">
+                    <fieldset class="flex w-auto h-6">
+                        <input class="w-36 pl-1.5 pb-0.5 text-sm md:w-44 lg:w-48 xl:w-56 2xl:w-56 focus:outline-none"
+                            placeholder="Buscar" />
+                        <button type="search" class="bg-white">
+                            <span class="material-icons z-10 text-gray-500 active:scale-110">
+                                search
+                            </span>
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+        </header>
+        <nav
+            class="flex mx-auto mt-20 justify-center overflow-x-auto overflow-y-hidden pt-4 pb-16 w-3/4 
+              rounded-sm shadow-none text-sm md:pt-3 md:pb-1.5 md:shadow-slate-300 lg:pt-2 lg:pb-1.5 lg:shadow-md 
+              lg:shadow-slate-300 xl:pt-1.5 xl:pb-2 xl:shadow-md xl:shadow-slate-300 2xl:pt-1.5 2xl:pb-3
+              2xl:shadow-md 2xl:shadow-slate-300"
+        >
+            <ul class="flex bg-white flex-col ml-0 space-x-0.5 md:ml-0 lg:flex-row lg:space-y-1.5 
+                  lg:ml-4 xl:flex-row xl:space-y-1.5 xl:ml-0 2xl:flex-row 2xl:ml-0 2xl:space-y-1.5">
+                <li
+                    class="flex self-center text-indigo-600 px-1 h-8 
+                      lg:h-12 xl:h-12 2xl:h-12
+                      hover:text-indigo-500"
+                >
+                    <a class="flex justify-center my-auto w-24 px-1.5" href="./index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="flex text-indigo-600 px-1 h-8 lg:h-12 xl:h-12 2xl:h-12 hover:text-indigo-500">
+                    <a
+                        class="flex justify-center my-auto w-48 px-1.5"
+                        href="./menuAdministrador.html"
+                    >
+                        / Menú Administrador
+                    </a>
+                </li>
+                <li class="flex text-indigo-600 px-1 h-8 lg:h-12 xl:h-12 2xl:h-12 hover:text-indigo-500">
+                    <a
+                        class="flex justify-center my-auto w-48 px-1.5"
+                        href="./adminEmpleados.html"
+                    >
+                        / Administrar empleados
+                    </a>
+                </li>
+                <li class="flex w-max h-8 lg:h-12 xl:h-12 2xl:h-12 px-1">
+                    <span
+                        class="flex justify-center my-auto rounded-sm 
+                          bg-zinc-500 text-zinc-300 px-1.5 py-0.5 
+                          w-48 lg:py-1.5 xl:py-1.5 2xl:py-1.5"
+                    >
+                        / Consultar empleado
+                    </span>
+                </li>
+            </ul>
+        </nav>
+        <div
+            class="flex flex-col w-11/12 mt-1.5 pt-4 space-y-20 
+              self-center md:mx-24 md:space-y-32 lg:mx-24 
+              lg:space-y-40 xl:space-y-40 xl:mx-28 xl:w-5/6 
+              2xl:space-y-40 2xl:mx-28"
+        >
+            <h3
+                class="text-center text-lg font-semibold"
+                style="font-family: 'Maven Pro', sans-serif;"
+            >
+                Consultar Empleado
+            </h3>
+            <div
+                class="grid grid-rows-2 gap-y-8 self-center max-h-96 shadow-md shadow-zinc-300 items-center 
+                  px-2 py-3 w-11/12 md:w-11/12 md:grid-cols-2 lg:grid-cols-2 lg:w-11/12 xl:grid-cols-2 
+                  xl:w-11/12 2xl:grid-cols-2 2xl:w-11/12"
+            >
+                <img src="./assets/SPA-employee.png" />
+                <div
+                    class="flex flex-col space-y-5 mt-20 px-4 py-10 rounded-lg bg-amber-50 
+                      md:space-y-5 md:mt-0 md:px-1.5 lg:space-y-6 lg:mt-0 lg:px-1.5 
+                      xl:space-y-6 xl:mt-0 xl:px-8 2xl:space-y-6 2xl:mt-0 2xl:px-8"
+                >
+                    <a href="/#" class="self-center rounded-lg shadow-md shadow-slate-400 w-14 h-14">
+                        <img
+                            src="./assets/SPA-search-employee.png"
+                            width="60"
+                         />
+                    </a>
+                    <p class="text-justify text-sm self-center px-1 md:px-3 lg:px-3 xl:px-8 2xl:px-9">
+                        Usted podrá realizar una consulta de un empleado por 
+                        número de documento, o de uno o más empleados con el 
+                        mismo nombre.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

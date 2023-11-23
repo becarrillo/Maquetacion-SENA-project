@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/Gavasoft-Logo.svg" />
+    <title>Resultados Reporte Ingresos::GAVASOFT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&family=Maven+Pro:wght@500;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex flex-col overflow-x-hidden overflow-y-auto pb-12">
+        <header class="flex flex-col space-y-2 justify-between px-8 py-3 w-screen fixed top-0 
+              bg-gradient-to-r from-indigo-600 to-fuchsia-700 md:flex-row md:space-y-0 
+              lg:flex-row lg:space-y-0 xl:flex-row xl:space-y-0 2xl:flex-row 
+              xl:space-y-0 md:px-20 lg:px-24 xl:px-24 2xl:px-24">
+            <div class="flex space-x-6 text-white">
+                <span class="material-symbols-outlined">menu</span>
+                <div>
+                    <span id="role">Administrador </span>
+                    <span class="material-icons text-sm">person</span>
+                </div>
+            </div>
+            <hr>
+            <div class="flex space-x-3.5 mx-auto md:flex-row md:mx-0 lg:flex-row 
+                  lg:mx-0 xl:flex-row xl:mx-0 2xl:flex-row 2xl:mx-0">
+                <div class="flex space-x-2">
+                    <button class="h-5 rounded-sm mt-0.5 hover:ring-1
+                    hover:ring-cyan-200" type="button">
+                        <img src="./assets/Gavasoft-Logo.svg" width="20" class="opacity-80 rounded-sm cursor-pointer" />
+                    </button>
+                    <button class="rounded-2xl bg-zinc-900 w-6 h-6 ml-auto hover:ring-1 hover:ring-cyan-200">
+                        <span class="small text-sm material-icons text-white">dark_mode</span>
+                    </button>
+                </div>
+
+                <form class="flex w-auto h-6">
+                    <fieldset class="flex w-auto h-6">
+                        <input class="w-36 pl-1.5 pb-0.5 text-sm md:w-44 lg:w-48 xl:w-56 2xl:w-56 focus:outline-none"
+                            placeholder="Buscar" />
+                        <button type="search" class="bg-white">
+                            <span class="material-icons z-10 text-gray-500 active:scale-110">
+                                search
+                            </span>
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+        </header>
+        <nav class="flex mx-auto mt-20 justify-center overflow-x-auto overflow-y-hidden pt-4 pb-9 w-3/4 
+              rounded-sm shadow-none text-sm md:pt-1.5 md:pb-2 md:shadow-slate-300 lg:pt-2 lg:pb-2 lg:shadow-md 
+              lg:shadow-slate-300 xl:pt-1.5 xl:pb-5 xl:shadow-md xl:shadow-slate-300 2xl:pt-1.5 2xl:pb-3
+              2xl:shadow-md 2xl:shadow-slate-300">
+            <ul class="flex bg-white flex-col ml-0 space-x-0.5 md:ml-0 lg:flex-row lg:space-y-1.5 
+                  lg:ml-4 xl:flex-row xl:space-y-1.5 xl:ml-0 2xl:flex-row 2xl:ml-0 2xl:space-y-1.5">
+                <li class="flex self-center text-indigo-600 px-1 h-8 
+                      lg:h-12 xl:h-12 2xl:h-12
+                      hover:text-indigo-500">
+                    <a class="flex justify-center my-auto w-24 px-1.5" href="./index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="flex text-indigo-600 px-1 h-8 lg:h-12 xl:h-12 2xl:h-12 hover:text-indigo-500">
+                    <a class="flex justify-center my-auto w-48 px-1.5" href="./menuAdministrador.html">
+                        / Menú Administrador
+                    </a>
+                </li>
+                <li class="flex text-indigo-600 px-1 h-8 lg:h-12 xl:h-12 2xl:h-12 hover:text-indigo-500">
+                    <a class="flex justify-center my-auto w-48 px-1.5" href="./buscarIngresos.html">
+                        / Reporte de ingresos
+                    </a>
+                </li>
+                <li class="flex text-indigo-600 px-1 h-8 lg:h-12 xl:h-12 2xl:h-12 hover:text-indigo-500">
+                    <a class="flex justify-center my-auto w-48 px-1.5" href="./buscarIngresos.html">
+                        / Buscar ingresos
+                    </a>
+                </li>
+                <li class="flex w-max h-8 lg:h-12 xl:h-12 2xl:h-12 px-1">
+                    <span class="flex justify-center my-auto rounded-sm 
+                          bg-zinc-500 text-zinc-300 px-1.5 py-0.5 
+                          w-48 lg:py-1.5 xl:py-1.5 2xl:py-1.5">
+                        / Resultados
+                    </span>
+                </li>
+            </ul>
+        </nav>
+        <div
+            class="flex flex-col w-11/12 mt-4 px-2 pt-3.5 space-y-6 self-center md:mx-24 
+              lg:mx-24 lg:space-y-20 xl:mx-28 xl:space-y-11 xl:w-5/6 2xl:space-y-16 2xl:mx-28"
+        >
+            <h2 class="text-2xl text-center">Resultados - Ingresos del Spa</h2>
+            <table
+                class="flex table-auto drop-shadow-lg mb-7 w-11/12 overflow-x-auto md:w-10/12 md:self-center 
+                  lg:w-10/12 lg:self-center xl:w-10/12 xl:self-center 2xl:w-11/12 2xl:self-center"
+            >
+                <thead class="flex fixed left-0">
+                    <tr class="grid grid-rows-8 gap-y-7 border border-collapse bg-slate-300 font-serif">
+                        <th class="px-3 py-1.5 w-44 border border-collapse">Número documento</th>
+                        <th class="px-3 py-1.5 w-44 border border-collapse">Tipo documento</th>
+                        <th class="px-3 py-1.5 w-44 border border-collapse">Apellidos</th>
+                        <th class="px-3 py-1.5 w-44 border border-collapse">Nombre</th>
+                        <th class="px-3 py-1.5 w-44 border border-collapse">Correo</th>
+                        <th class="px-3 py-1.5 w-44 border border-collapse">Id factura</th>
+                        <th class="px-3 py-1.5 w-44 border border-collapse">Fecha pago</th>
+                        <th class="px-3 py-1.5 w-44 border border-collapse">Método pago</th>
+                        <th class="px-10 py-1.5 w-44 border border-collapse">Servicio</th>
+                    </tr>
+                </thead>
+                <tbody class="flex ml-44 overflow-x-auto">
+                    <tr class="grid grid-rows-8 gap-y-7 border border-xl even:bg-fuchsia-100 odd:bg-cyan-50 font-serif">
+                        <td class="px-3 py-1.5 w-80  border border-collapse bg-white">012345</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">cédula ciudadanía</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">Gutierrez Santos</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">Marcela</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">mar9@mail.com</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">f4Yd7enui_9uh8nM</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">24-08-06</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">tarjeta crédito</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">Sauna herbal</td>
+                    </tr>
+                    <tr
+                        class="grid grid-rows-8 gap-y-7 border border-collapse even:bg-fuchsia-100 odd:bg-cyan-50 font-serif">
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">7890123</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">tarjeta de id</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">Llinás Socarrás</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">Mateo David</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">mdllinas@mail.com</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">Zd23afzwg2t47bt</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">04-04-2023</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">efectivo</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">mascarilla con miel y avellanas
+                        </td>
+                    </tr>
+                    <tr class="grid grid-rows-8 gap-y-7 border border-xl even:bg-fuchsia-100 odd:bg-cyan-50 font-serif">
+                        <td class="px-3 py-1.5 w-80  border border-collapse bg-white">012345</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">cédula ciudadanía</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">Gutierrez Santos</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">Marcela</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">mar9@mail.com</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">45E-dn0PqAsz700B11</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">24-01-2023</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">tarjeta crédito</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">estimulación facial baño de lodo
+                        </td>
+                    </tr>
+                    <tr class="grid grid-rows-8 gap-y-7 border border-xl even:bg-fuchsia-100 odd:bg-cyan-50 font-serif">
+                        <td class="px-3 py-1.5 w-80  border border-collapse bg-white">496570204</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">cédula ciudadanía</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">Ponce Mercado</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">José Javier</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">jj-mercado95@mail.com</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">f4Y6sIloP3NDa7v</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">04-02-2023</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">tarjeta crédito</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">Sauna herbal</td>
+                    </tr>
+                    <tr class="grid grid-rows-8 gap-y-7 border border-xl even:bg-fuchsia-100 odd:bg-cyan-50 font-serif">
+                        <td class="px-3 py-1.5 w-80  border border-collapse bg-white">012345</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">cédula ciudadanía</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">Gutierrez Santos</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">Marcela</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">mar9@mail.com</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">f4Yd7enui_9uh8nM</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">02-02-2023</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">tarjeta crédito</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">masaje de espalda</td>
+                    </tr>
+
+                    <tr class="grid grid-rows-8 gap-y-7 border border-xl even:bg-fuchsia-100 odd:bg-cyan-50 font-serif">
+                        <td class="px-3 py-1.5 w-80  border border-collapse bg-white">012345</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">cédula ciudadanía</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">Gutierrez Santos</td>
+                        <td class="px-3 py-1.5 w-80 border border-collapse bg-white">Marcela</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">mar9@mail.com</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">m24EstyutH22moh</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">02-02-2023</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">tarjeta crédito</td>
+                        <td class="px-3 py-1.5  w-80 border border-collapse bg-white">estimulación muscular en frío</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="flex space-x-1.5 mx-auto rounded-sm shadow-md shadow-neutral-400 items-center p-2">
+                <label for="adminFormat">
+                    <button
+                        type="button"
+                        class="px-4 py-1.5 rounded-md shadow-sm shadow-gray-500 bg-gradient-to-r 
+                          from-indigo-600 to-fuchsia-700 text-white hover:bg-gradient-to-r 
+                          hover:from-indigo-400 hover:to-fuchsia-500 hover:translate-x-0.5 
+                          hover:delay-150 hover:scale-105 hover:translate-x-45 hover:ease-out 
+                          hover:duration-75 focus:ring-4 focus:ring-cyan-300"
+                    >
+                        Descargar como
+                    </button>
+                </label>
+                <select
+                    class="w-24 h-9 rounded-sm shadow-sm shadow-gray-500 pl-1.5"
+                    id="adminFormat"
+                >
+                    <option>PDF</option>
+                    <option>Excel</option>
+                    <option>TXT</option>
+                </select>
+            </div>
+            
+        </div>
+    </div>
+</body>

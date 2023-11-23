@@ -1,12 +1,39 @@
+:root {
+    --myUiIndigo: #004aad;
+    --myUiFuchsia: #cb6ce6;
+    --myUiCyan: #5ce1e6;
+}
+
 #sideA {
     height: 100vh;
 }
 
+#submit {
+    background-color: darkcyan;
+}
+
+#forgot-psw {
+    color: darkcyan;
+}
+
+#forgot-psw:hover {
+    color: darkgoldenrod
+}
+
+#submit:hover {
+    background-color: var(--myUiCyan);
+    color: var(--myUiIndigo);
+}
+
 .login-form-title {
-    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 @media screen and (max-width: 767px) {
+    body > #container {
+        background: radial-gradient(var(--myUiIndigo), var(--myUiFuchsia))
+        
+    }
 
     #sideB {
         background-size: cover;
@@ -15,6 +42,11 @@
         width: auto;
         height: 88vh;
         margin-top: 2.5em;
+    }
+
+    #forgot-psw {
+        border-radius: 8px;
+        background-color: white;
     }
 }
 
